@@ -1,0 +1,583 @@
+[
+  {
+    "_index": "packets-2020-07-08",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "wlp0s20f3"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Jul  8, 2020 15:49:46.356086821 IST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1594203586.356086821",
+          "frame.time_delta": "0.000000000",
+          "frame.time_delta_displayed": "0.000000000",
+          "frame.time_relative": "0.000000000",
+          "frame.number": "1",
+          "frame.len": "66",
+          "frame.cap_len": "66",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp",
+          "frame.coloring_rule.name": "TCP",
+          "frame.coloring_rule.string": "tcp"
+        },
+        "eth": {
+          "eth.dst": "00:1a:9a:de:ad:05",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Skyworth_de:ad:05",
+            "eth.dst.oui": "6810",
+            "eth.dst.oui_resolved": "Skyworth Digital Technology(Shenzhen) Co.,Ltd",
+            "eth.addr": "00:1a:9a:de:ad:05",
+            "eth.addr_resolved": "Skyworth_de:ad:05",
+            "eth.addr.oui": "6810",
+            "eth.addr.oui_resolved": "Skyworth Digital Technology(Shenzhen) Co.,Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "38:00:25:e0:ab:64",
+          "eth.src_tree": {
+            "eth.src_resolved": "IntelCor_e0:ab:64",
+            "eth.src.oui": "3670053",
+            "eth.src.oui_resolved": "Intel Corporate",
+            "eth.addr": "38:00:25:e0:ab:64",
+            "eth.addr_resolved": "IntelCor_e0:ab:64",
+            "eth.addr.oui": "3670053",
+            "eth.addr.oui_resolved": "Intel Corporate",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "52",
+          "ip.id": "0x00000f89",
+          "ip.flags": "0x00004000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x0000063d",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.1.29",
+          "ip.addr": "192.168.1.29",
+          "ip.src_host": "192.168.1.29",
+          "ip.host": "192.168.1.29",
+          "ip.dst": "74.125.24.188",
+          "ip.addr": "74.125.24.188",
+          "ip.dst_host": "74.125.24.188",
+          "ip.host": "74.125.24.188"
+        },
+        "tcp": {
+          "tcp.srcport": "45804",
+          "tcp.dstport": "5228",
+          "tcp.port": "45804",
+          "tcp.port": "5228",
+          "tcp.stream": "0",
+          "tcp.len": "0",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "838097637",
+          "tcp.nxtseq": "1",
+          "tcp.ack": "1",
+          "tcp.ack_raw": "138152010",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000010",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "0",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······A····"
+          },
+          "tcp.window_size_value": "501",
+          "tcp.window_size": "501",
+          "tcp.window_size_scalefactor": "-1",
+          "tcp.checksum": "0x00009086",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:22:c8:43:3b:39:a1:ba:e6",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:22:c8:43:3b:39:a1:ba:e6",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "583549755",
+              "tcp.options.timestamp.tsecr": "966900454"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000000000",
+            "tcp.time_delta": "0.000000000"
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2020-07-08",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "wlp0s20f3"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Jul  8, 2020 15:49:46.356133090 IST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1594203586.356133090",
+          "frame.time_delta": "0.000046269",
+          "frame.time_delta_displayed": "0.000046269",
+          "frame.time_relative": "0.000046269",
+          "frame.number": "2",
+          "frame.len": "74",
+          "frame.cap_len": "74",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp",
+          "frame.coloring_rule.name": "TCP SYN/FIN",
+          "frame.coloring_rule.string": "tcp.flags & 0x02 || tcp.flags.fin == 1"
+        },
+        "eth": {
+          "eth.dst": "00:1a:9a:de:ad:05",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Skyworth_de:ad:05",
+            "eth.dst.oui": "6810",
+            "eth.dst.oui_resolved": "Skyworth Digital Technology(Shenzhen) Co.,Ltd",
+            "eth.addr": "00:1a:9a:de:ad:05",
+            "eth.addr_resolved": "Skyworth_de:ad:05",
+            "eth.addr.oui": "6810",
+            "eth.addr.oui_resolved": "Skyworth Digital Technology(Shenzhen) Co.,Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "38:00:25:e0:ab:64",
+          "eth.src_tree": {
+            "eth.src_resolved": "IntelCor_e0:ab:64",
+            "eth.src.oui": "3670053",
+            "eth.src.oui_resolved": "Intel Corporate",
+            "eth.addr": "38:00:25:e0:ab:64",
+            "eth.addr_resolved": "IntelCor_e0:ab:64",
+            "eth.addr.oui": "3670053",
+            "eth.addr.oui_resolved": "Intel Corporate",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "60",
+          "ip.id": "0x00007f36",
+          "ip.flags": "0x00004000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x00003e5f",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.1.29",
+          "ip.addr": "192.168.1.29",
+          "ip.src_host": "192.168.1.29",
+          "ip.host": "192.168.1.29",
+          "ip.dst": "125.99.61.254",
+          "ip.addr": "125.99.61.254",
+          "ip.dst_host": "125.99.61.254",
+          "ip.host": "125.99.61.254"
+        },
+        "tcp": {
+          "tcp.srcport": "57617",
+          "tcp.dstport": "53",
+          "tcp.port": "57617",
+          "tcp.port": "53",
+          "tcp.stream": "1",
+          "tcp.len": "0",
+          "tcp.seq": "0",
+          "tcp.seq_raw": "1477985006",
+          "tcp.nxtseq": "1",
+          "tcp.ack": "0",
+          "tcp.ack_raw": "0",
+          "tcp.hdr_len": "40",
+          "tcp.flags": "0x00000002",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "0",
+            "tcp.flags.push": "0",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "1",
+            "tcp.flags.syn_tree": {
+              "_ws.expert": {
+                "tcp.connection.syn": "",
+                "_ws.expert.message": "Connection establish request (SYN): server port 53",
+                "_ws.expert.severity": "2097152",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "··········S·"
+          },
+          "tcp.window_size_value": "64240",
+          "tcp.window_size": "64240",
+          "tcp.checksum": "0x0000fce9",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "02:04:05:b4:04:02:08:0a:ad:d3:a8:dd:00:00:00:00:01:03:03:07",
+          "tcp.options_tree": {
+            "tcp.options.mss": "02:04:05:b4",
+            "tcp.options.mss_tree": {
+              "tcp.option_kind": "2",
+              "tcp.option_len": "4",
+              "tcp.options.mss_val": "1460"
+            },
+            "tcp.options.sack_perm": "04:02",
+            "tcp.options.sack_perm_tree": {
+              "tcp.option_kind": "4",
+              "tcp.option_len": "2"
+            },
+            "tcp.options.timestamp": "08:0a:ad:d3:a8:dd:00:00:00:00",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "2916329693",
+              "tcp.options.timestamp.tsecr": "0"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.wscale": "03:03:07",
+            "tcp.options.wscale_tree": {
+              "tcp.option_kind": "3",
+              "tcp.option_len": "3",
+              "tcp.options.wscale.shift": "7",
+              "tcp.options.wscale.multiplier": "128"
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.000000000",
+            "tcp.time_delta": "0.000000000"
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2020-07-08",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "wlp0s20f3"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Jul  8, 2020 15:49:46.430906614 IST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1594203586.430906614",
+          "frame.time_delta": "0.074773524",
+          "frame.time_delta_displayed": "0.074773524",
+          "frame.time_relative": "0.074819793",
+          "frame.number": "3",
+          "frame.len": "66",
+          "frame.cap_len": "66",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp",
+          "frame.coloring_rule.name": "Bad TCP",
+          "frame.coloring_rule.string": "tcp.analysis.flags && !tcp.analysis.window_update"
+        },
+        "eth": {
+          "eth.dst": "38:00:25:e0:ab:64",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "IntelCor_e0:ab:64",
+            "eth.dst.oui": "3670053",
+            "eth.dst.oui_resolved": "Intel Corporate",
+            "eth.addr": "38:00:25:e0:ab:64",
+            "eth.addr_resolved": "IntelCor_e0:ab:64",
+            "eth.addr.oui": "3670053",
+            "eth.addr.oui_resolved": "Intel Corporate",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:1a:9a:de:ad:05",
+          "eth.src_tree": {
+            "eth.src_resolved": "Skyworth_de:ad:05",
+            "eth.src.oui": "6810",
+            "eth.src.oui_resolved": "Skyworth Digital Technology(Shenzhen) Co.,Ltd",
+            "eth.addr": "00:1a:9a:de:ad:05",
+            "eth.addr_resolved": "Skyworth_de:ad:05",
+            "eth.addr.oui": "6810",
+            "eth.addr.oui_resolved": "Skyworth Digital Technology(Shenzhen) Co.,Ltd",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "52",
+          "ip.id": "0x00006a56",
+          "ip.flags": "0x00000000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "0",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "101",
+          "ip.proto": "6",
+          "ip.checksum": "0x0000c66f",
+          "ip.checksum.status": "2",
+          "ip.src": "74.125.24.188",
+          "ip.addr": "74.125.24.188",
+          "ip.src_host": "74.125.24.188",
+          "ip.host": "74.125.24.188",
+          "ip.dst": "192.168.1.29",
+          "ip.addr": "192.168.1.29",
+          "ip.dst_host": "192.168.1.29",
+          "ip.host": "192.168.1.29"
+        },
+        "tcp": {
+          "tcp.srcport": "5228",
+          "tcp.dstport": "45804",
+          "tcp.port": "5228",
+          "tcp.port": "45804",
+          "tcp.stream": "0",
+          "tcp.len": "0",
+          "tcp.seq": "1",
+          "tcp.seq_raw": "138152010",
+          "tcp.nxtseq": "1",
+          "tcp.ack": "2",
+          "tcp.ack_raw": "838097638",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000010",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "0",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "·······A····"
+          },
+          "tcp.window_size_value": "253",
+          "tcp.window_size": "253",
+          "tcp.window_size_scalefactor": "-1",
+          "tcp.checksum": "0x000019cf",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:39:a2:72:a5:22:c2:03:30",
+          "tcp.options_tree": {
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.nop": "01",
+            "tcp.options.nop_tree": {
+              "tcp.option_kind": "1"
+            },
+            "tcp.options.timestamp": "08:0a:39:a2:72:a5:22:c2:03:30",
+            "tcp.options.timestamp_tree": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "966947493",
+              "tcp.options.timestamp.tsecr": "583140144"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.flags": {
+              "_ws.expert": {
+                "tcp.analysis.ack_lost_segment": "",
+                "_ws.expert.message": "ACKed segment that wasn't captured (common at capture start)",
+                "_ws.expert.severity": "6291456",
+                "_ws.expert.group": "33554432"
+              }
+            }
+          },
+          "Timestamps": {
+            "tcp.time_relative": "0.074819793",
+            "tcp.time_delta": "0.074819793"
+          }
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2020-07-08",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "wlp0s20f3"
+          },
+          "frame.encap_type": "1",
+          "frame.time": "Jul  8, 2020 15:49:46.531975608 IST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1594203586.531975608",
+          "frame.time_delta": "0.101068994",
+          "frame.time_delta_displayed": "0.101068994",
+          "frame.time_relative": "0.175888787",
+          "frame.number": "4",
+          "frame.len": "137",
+          "frame.cap_len": "137",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:udp:data",
+          "frame.coloring_rule.name": "UDP",
+          "frame.coloring_rule.string": "udp"
+        },
+        "eth": {
+          "eth.dst": "00:1a:9a:de:ad:05",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "Skyworth_de:ad:05",
+            "eth.dst.oui": "6810",
+            "eth.dst.oui_resolved": "Skyworth Digital Technology(Shenzhen) Co.,Ltd",
+            "eth.addr": "00:1a:9a:de:ad:05",
+            "eth.addr_resolved": "Skyworth_de:ad:05",
+            "eth.addr.oui": "6810",
+            "eth.addr.oui_resolved": "Skyworth Digital Technology(Shenzhen) Co.,Ltd",
+            "eth.dst.lg": "0",
+            "eth.lg": "0",
+            "eth.dst.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "38:00:25:e0:ab:64",
+          "eth.src_tree": {
+            "eth.src_resolved": "IntelCor_e0:ab:64",
+            "eth.src.oui": "3670053",
+            "eth.src.oui_resolved": "Intel Corporate",
+            "eth.addr": "38:00:25:e0:ab:64",
+            "eth.addr_resolved": "IntelCor_e0:ab:64",
+            "eth.addr.oui": "3670053",
+            "eth.addr.oui_resolved": "Intel Corporate",
+            "eth.src.lg": "0",
+            "eth.lg": "0",
+            "eth.src.ig": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "123",
+          "ip.id": "0x0000c176",
+          "ip.flags": "0x00004000",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "17",
+          "ip.checksum": "0x0000640e",
+          "ip.checksum.status": "2",
+          "ip.src": "192.168.1.29",
+          "ip.addr": "192.168.1.29",
+          "ip.src_host": "192.168.1.29",
+          "ip.host": "192.168.1.29",
+          "ip.dst": "172.217.166.78",
+          "ip.addr": "172.217.166.78",
+          "ip.dst_host": "172.217.166.78",
+          "ip.host": "172.217.166.78"
+        },
+        "udp": {
+          "udp.srcport": "33609",
+          "udp.dstport": "443",
+          "udp.port": "33609",
+          "udp.port": "443",
+          "udp.length": "103",
+          "udp.checksum": "0x0000880a",
+          "udp.checksum.status": "2",
+          "udp.stream": "0",
+          "Timestamps": {
+            "udp.time_relative": "0.000000000",
+            "udp.time_delta": "0.000000000"
+          }
+        },
+        "data": {
+          "data.data": "4a:5f:9d:24:3d:70:0d:39:20:07:2b:ad:d6:d9:65:08:19:2e:8e:ea:3c:18:a9:49:c4:df:75:4f:45:8e:98:1c:05:57:1d:0f:8e:31:00:f8:77:4b:b4:3b:79:21:1e:14:0c:3c:43:b6:2e:a2:92:21:9b:d7:9b:93:a4:31:49:70:1d:e5:44:f1:b7:1c:80:15:03:05:18:85:62:55:73:f1:de:24:71:98:47:6f:a2:78:46:be:97:eb:cd:d2:62",
+          "data.len": "95"
+        }
+      }
+    }
+  }
+]

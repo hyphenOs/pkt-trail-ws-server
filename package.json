@@ -1,0 +1,12 @@
+{
+  "name": "webshark-backend",
+  "version": "1.0.0",
+  "description": "Backend for streaming pcap data in node.js",
+  "main": "server.js",
+  "repository": "https://github.com/hyphenOs/webshark-backend.git",
+  "author": "hyphenOs",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^7.3.0"
+  }
+}
