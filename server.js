@@ -52,7 +52,7 @@ const parseJSON = () => {
       setTimeout(() => {
         for (let client of socketServer.clients) {
           if (client.active === true) {
-            client.send(JSON.stringify(data));
+            client.send(JSON.stringify(data._source.layers));
           } else {
             console.log("client not active");
           }
@@ -67,7 +67,8 @@ const parseJSON = () => {
 const socketServer = new WebSocket.Server({ port: 3030 });
 console.log("listening on 3030");
 
-pktStreamer.emit("packet");
+// FIXME: Comment the following line when you want to test with PCAP file
+// pktStreamer.emit("packet");
 
 socketServer.on("connection", (socketClient) => {
   console.log("Connected to client");
@@ -75,6 +76,7 @@ socketServer.on("connection", (socketClient) => {
   socketClient.on("message", (message) => {
     if (message === "start") {
       console.log("Start JSON streaming");
+      parseJSON(); // Uncomment this line when you want to test with PCAP
       socketClient.active = true;
     } else if (message === "stop") {
       socketClient.active = false;
