@@ -12,6 +12,11 @@ if( live === undefined && file === undefined){
   console.log("Usage: yarn start --live <interface-name> | --file <path-to-pcap-filename>");
   process.exit(1)
 }
+if( live && file ){
+  console.log("Invalid use of flags. Please provide a valid format as instucted below.")
+  console.log("Usage: yarn start --live <interface-name> | --file <path-to-pcap-filename>");
+  process.exit(1)
+}
 
 const redisClient = redis.createClient({db:7});
 const asyncBlpop = promisify(redisClient.blpop).bind(redisClient);
@@ -22,7 +27,7 @@ const pktStreamer = new PacketStreamer();
 
 pktStreamer.on("packet", () => {
 
-  asyncBlpop("paket_queue:wlp2s0", 1)
+  asyncBlpop(`packet_queue:${live}`, 1)
     .then( (data) => {
         if (data) {
           console.log(data);
@@ -46,9 +51,9 @@ const streamPacket = (data) => {
 };
 
 // No longer used, can delete later
-const parseJSON = () => {
+const parseJSON = (filePath) => {
   const transformStream = JSONStream.parse("*");
-  const inputStream = fs.createReadStream(__dirname + "/pcap-files/small.json");
+  const inputStream = fs.createReadStream(__dirname + "/" + filePath);
 
   inputStream
     .pipe(transformStream)
@@ -76,7 +81,9 @@ const socketServer = new WebSocket.Server({ port: 3030 });
 console.log("listening on 3030");
 
 // FIXME: Comment the following line when you want to test with PCAP file
-// pktStreamer.emit("packet"); 
+if(live){
+  pktStreamer.emit("packet"); 
+}
 
 socketServer.on("connection", (socketClient) => {
   console.log("Connected to client");
@@ -84,7 +91,10 @@ socketServer.on("connection", (socketClient) => {
   socketClient.on("message", (message) => {
     if (message === "start") {
       console.log("Start JSON streaming");
-      parseJSON(); // Uncomment this line when you want to test with PCAP
+      if(file){
+        parseJSON(file); // Uncomment this line when you want to test with PCAP
+      }
+      
       socketClient.active = true;
     } else if (message === "stop") {
       socketClient.active = false;
